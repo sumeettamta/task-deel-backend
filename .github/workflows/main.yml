@@ -4,11 +4,12 @@ on:
   pull_request:
     branches:
       - '*'
+    paths:
+      - 'src/controllers**'
   push:
     branches:
       - '*'
-    paths:
-      - 'src/controllers**'
+
 jobs:
   linting-main-service:
     runs-on: ubuntu-latest
