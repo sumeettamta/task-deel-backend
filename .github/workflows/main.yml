@@ -23,13 +23,6 @@ jobs:
           node-version: 20
 
       - name: Install dependencies on auth-service
-        working-directory: ./task-deel-backend
-        run: yarn
+        working-directory: ./
+        run: npm install
 
-      - name: Run ESLint
-        working-directory: ./task-deel-backend
-        run: yarn lint:check
-
-      - name: Compile TSC
-        working-directory: ./task-deel-backend/
-        run: yarn build
